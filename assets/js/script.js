@@ -62,7 +62,7 @@ $( document ).ready(function() {
             };
             result =emailjs.send(service_id,template_id,template_params);
             alert("Your Email Sent.");
-            return false; // for demo
+            //return false; // for demo
         }
     });
 
