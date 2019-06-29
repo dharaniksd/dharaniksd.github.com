@@ -17,7 +17,12 @@
         <link href="assets/css/main.css" rel="stylesheet">
         <link rel="icon" href="assets/images/logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_H23zaDkgznopDeFQ2buJO");
+   })();
+</script>
     </head>
 
     <body>
@@ -119,15 +124,15 @@
                         <!-- form -->
                         <form class="form_edit"> 
                             <div class="form-group">
-                                <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
+                                <input type="name" name="userName" class="form-control" id="exampleInputName" placeholder="Name">
                             </div>
 
                             <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            <input type="email" class="form-control" name="userEmail" id="exampleInputEmail1" placeholder="Email">
                             </div>
 
                             <div class="form-group">
-                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                            <textarea class="form-control" rows="5" name="userMsg" placeholder="Message"></textarea>
                             </div>
                             <button type="submit" class="btn btn-rabbit submit">Send Message</button>
                         </form>
@@ -148,6 +153,7 @@
         </div>                                                              <!-- Contact ends here -->
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/script.js"></script>
     </body>
